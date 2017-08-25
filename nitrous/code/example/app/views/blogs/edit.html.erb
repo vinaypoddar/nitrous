@@ -1,0 +1,13 @@
+<div class="blogs">
+  <div class="container">
+
+    <div class="form">
+      <%= form_for(@blog, :url => {:action => 'update', :id => @blog.id}) do |f| %>
+      <%= f.text_field :title, :placeholder => "title", :value => @blog.title %>
+      <%= f.text_field :desc, :placeholder => "description", :value => @blog.desc %>
+      <%= f.submit "update blog", class: "btn-submit" %>
+      <% end %>
+    </div>
+
+  </div>
+</div>

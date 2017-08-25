@@ -1,0 +1,24 @@
+<div class="blogs">
+  <div class="container">
+
+    <div class="blog">
+        <div class="item col-md-4">
+          <div class="blog-info">
+            <h2>Title <%= @blog.title %></h2>
+            <h4>Description <%= @blog.desc %></h4>
+            <h4>Creation Date <%= @blog.created_at %></h4>
+            <h4>Average Rating <%= @blog.average_rating %></h4>
+          </div>
+        </div>
+      <% unless Rating.find_by_user_id_and_blog_id(current_user.id, @blog.id).present? %>
+      <%= form_for(:rating, :url => {:controller => 'ratings', :action => 'create', :blog_id => @blog.id }) do |f| %>
+          <td>provide rating (0 - 5) <%= f.number_field(:rating) %></td>
+        <%= submit_tag("Submit rating!!")%>
+        <% end %>
+      <% end %>
+      <p><%= link_to "Edit blog", edit_blog_path %></p>
+      <p><%= link_to "All blogs", blogs_path %></p>
+    </div>
+
+  </div>
+</div>

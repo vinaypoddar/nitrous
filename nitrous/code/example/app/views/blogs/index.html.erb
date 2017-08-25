@@ -1,0 +1,22 @@
+<div class="blogs">
+  <div class="container">
+    <h1>List of all blogs</h1>
+    <div class="row">
+      <% sorted_blogs(@blogs).each do |blog|%>
+        <div class="item col-md-4">
+          <div class="blog-info">
+            <h2>Title <%= blog.title %></h2>
+            <h6>Author <%= blog.author_name %></h6>
+            <h4>Description <%= blog.desc %></h4>
+            <h4>Average Rating <%= blog.average_rating %></h4>
+            <h4>Created Date <%= blog.created_at %></h4>
+            <p><%= link_to "See blog", blog_path(blog) %></p>
+            <hr>
+          </div>
+        </div>
+      <% end %>
+      <p><%= link_to "Create blog", new_blog_path, :class => 'action new' %></p>
+    </div>
+
+  </div>
+</div>

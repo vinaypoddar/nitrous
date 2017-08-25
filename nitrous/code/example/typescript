@@ -1,0 +1,29 @@
+Script started on Sat 13 Feb 2016 02:14:41 PM UTC
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@blistering-tires-158616: ~/code/example]1;~/code/example[0m[27m[24m[J[01;32m➜ [01;32m [36mexample [01;34m[01;34m [00m[K[?1h=script      script/con        s  script/console[14D              [14Dscript/console        _runnner[?1l>
+]2;script_runnner]1;script_runnnerzsh: command not found: script_runnner
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@blistering-tires-158616: ~/code/example]1;~/code/example[0m[27m[24m[J[01;31m➜ [27m[01;32m [36mexample [01;34m[01;34m [00m[K[?1h=script_runnner            s      rrails    r  ssandbox[?1l>
+]2;sandbox]1;sandboxzsh: command not found: sandbox
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@blistering-tires-158616: ~/code/example]1;~/code/example[0m[27m[24m[J[01;31m➜ [27m[01;32m [36mexample [01;34m[01;34m [00m[K[?1h=sandbox     s  iirb[?1l>
+]2;irb]1;irbirb(main):001:0> Rating.all
+NameError: uninitialized constant Rating
+	from (irb):1
+	from /usr/local/opt/rbenv/versions/2.1.5/bin/irb:11:in `<main>'
+irb(main):002:0> exit
+[1m[7m%[27m[1m[0m                                                                                                                                                                              ]2;nitrous@blistering-tires-158616: ~/code/example]1;~/code/example[0m[27m[24m[J[01;32m➜ [01;32m [36mexample [01;34m[01;34m [00m[K[?1h=rrails / con    config   sole[?1l>
+]2;rails console]1;railsLoading development environment (Rails 4.2.5.1)
+irb(main):001:0> Raiting.all
+NameError: uninitialized constant Raiting
+	from (irb):1
+	from /home/nitrous/code/example/.bundle/gems/railties-4.2.5.1/lib/rails/commands/console.rb:110:in `start'
+	from /home/nitrous/code/example/.bundle/gems/railties-4.2.5.1/lib/rails/commands/console.rb:9:in `start'
+	from /home/nitrous/code/example/.bundle/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/nitrous/code/example/.bundle/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/nitrous/code/example/.bundle/gems/railties-4.2.5.1/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+irb(main):002:0> US[Kser.all
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+=> #<ActiveRecord::Relation [#<User id: 1, first_name: "vinay", last_name: "poddar", email: "kinng.a380@gmail.com", password_digest: "$2a$10$8B/p9EenkCgO7PuoWReqIu.7ZKTUR.m/vN.pE1t2Um5...", created_at: "2016-02-13 10:56:26", updated_at: "2016-02-13 10:56:26">, #<User id: 2, first_name: "vinay1", last_name: "poddar", email: "v.naypoddar@gmail.com", password_digest: "$2a$10$MiDdE2guC7N.gROTONCwiOX2z5ur5TvgxUUOHfEAtrt...", created_at: "2016-02-13 13:07:32", updated_at: "2016-02-13 13:07:32">]>
+irb(main):003:0> User.all[1P.all[1P.all[1P.all[1P.allR.alla.allt.alli.alln.allg.all
+  [1m[35mRating Load (0.5ms)[0m  SELECT "ratings".* FROM "ratings"
+=> #<ActiveRecord::Relation [#<Rating id: 1, blog_id: nil, user_id: 2, rating: 2>, #<Rating id: 2, blog_id: nil, user_id: 2, rating: 2>, #<Rating id: 3, blog_id: nil, user_id: 2, rating: nil>, #<Rating id: 4, blog_id: nil, user_id: 2, rating: nil>, #<Rating id: 5, blog_id: nil, user_id: 2, rating: nil>, #<Rating id: 6,

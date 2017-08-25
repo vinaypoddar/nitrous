@@ -1,0 +1,13 @@
+<div class="blogs">
+  <div class="container">
+
+    <div class="form">
+      <%= form_for(@blog) do |f| %>
+        <%= f.text_field :title, :placeholder => "title" %>
+        <%= f.text_field :desc, :placeholder => "description" %>
+        <%= f.submit "Create blog", class: "btn-submit" %>
+      <% end %>
+    </div>
+
+  </div>
+</div>
